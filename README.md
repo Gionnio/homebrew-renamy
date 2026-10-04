@@ -1,25 +1,18 @@
 # Homebrew Tap for Renamy 🎬
 
-Homebrew tap for [Renamy](https://github.com/Gionnio/renamy), a native macOS app to rename and organize your personal video library.
+> **This tap has moved.** Renamy is now distributed from [Gionnio/homebrew-tap](https://github.com/Gionnio/homebrew-tap), together with my other apps. This tap is kept only so existing installs keep working and will not receive new versions.
 
 ## Install
 
 ```bash
-brew install --cask gionnio/renamy/renamy
+brew install --cask gionnio/tap/renamy
 ```
 
-## Update
+## Switch from this tap
 
 ```bash
-brew upgrade --cask renamy
+brew uninstall --cask renamy && brew untap gionnio/renamy
+brew install --cask gionnio/tap/renamy
 ```
 
-## Uninstall
-
-```bash
-brew uninstall --cask renamy
-```
-
-Add `--zap` to also remove the app settings.
-
-Requires macOS 14.6 or later on Apple Silicon.
+Your Renamy settings are kept (they are only removed with `--zap`).
